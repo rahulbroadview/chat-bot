@@ -1,0 +1,32 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-image: url('https://media2.giphy.com/media/APpuWpK366s25t8MB3/giphy.gif?cid=ecf05e47o2dgcucqg5anteiu7dobr9vs36lq5u29dq2ox5nq&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.lips-animation {
+  font-size: 36px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  animation-name: lipMovement;
+  animation-timing-function: steps(1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes lipMovement {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
